@@ -1,0 +1,35 @@
+:root {
+  --header: #FFFFFF;
+  --text: C6C6C6;
+  --textInButton: #000000;
+  --background: #1A1A1A;
+  --footerBackground: #3F342A;
+  --buttonBackground: #FFBF05;
+  --imageBackground: #9A5701;
+
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.nunito {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+button {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1280px;
+  /*(1720px + 30px * 2) */
+  margin: 0 auto;
+  padding: 0 30px;
+  background-color: var(--background);
+}

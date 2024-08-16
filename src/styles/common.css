@@ -1,6 +1,6 @@
 :root {
   --header: #FFFFFF;
-  --text: C6C6C6;
+  --text: #C6C6C6;
   --textInButton: #000000;
   --background: #1A1A1A;
   --footerBackground: #3F342A;
@@ -14,6 +14,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  
 }
 
 .nunito {

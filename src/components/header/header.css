@@ -1,5 +1,5 @@
-.header__row{
-  display: flex;
+.header__container{
+  background-color: var(--background);
 }
 .header__row {
   display: flex;
@@ -26,7 +26,36 @@
   color: var(--header);
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  padding-right: 50px;
 }
 .header__actionBtns > img{
   height: 34px;
+  padding: 10px;
+}
+
+.header__logo {
+  display: inline-block;
+  background-color: #FE7D00;
+  padding: 10px 20px;
+  border-radius: 12px; 
+  border: 3px solid #333; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  text-align: center; 
+}
+
+.header__logo span {
+  display: block;
+  font-size: 28px; 
+  font-weight: bold;
+  color: #333; 
+  text-transform: uppercase; 
+  margin-bottom: 5px;
+}
+
+.header__logo p {
+  font-size: 16px; 
+  font-style: italic; 
+  color: #555; 
 }

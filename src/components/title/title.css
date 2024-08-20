@@ -1,0 +1,29 @@
+.title__container {
+  background-color: var(--text);
+}
+
+.title__title {
+  position: relative;
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 128px;
+}
+.title__text{
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.title__baby {
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  font-size: 18px;
+  font-style: italic;
+  transform: rotate(15deg);
+  color: #ff6666;
+}
+.title__btn{
+  background-color: var(--buttonBackground);
+  padding: 22px 45px 22px 45px;
+}

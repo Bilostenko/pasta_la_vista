@@ -2,7 +2,7 @@
   --header: #FFFFFF;
   --text: #C6C6C6;
   --textInButton: #000000;
-  --background: #1A1A1A;
+  --background: #110500;
   --footerBackground: #3F342A;
   --buttonBackground: #FFBF05;
   --imageBackground: #9A5701;
@@ -35,4 +35,29 @@ button {
   margin: 0 auto;
   padding: 0 30px;
   
+}
+
+.btn {
+  background-color: #FE7D00;
+  padding: 15px 30px;
+  border-radius: 12px;
+  border: 3px solid #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn:hover {
+  background-color: #FF9933;
+}
+
+.wrapper{
+  max-width: 1170px;
+}
+
+.container__color{
+  background-color: var(--background);
 }

@@ -1,0 +1,45 @@
+.goToMenu__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Зробить елементи в одному ряду */
+}
+
+.goToMenu__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 575px; /* Максимальна ширина для текстового блоку */
+}
+
+.goToMenu__title {
+  font-weight: 700;
+  line-height: 72px;
+  font-size: 72px;
+  color: var(--text);
+}
+
+.goToMenu__description {
+  color: var(--header);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.btn__goToMenu {
+  margin-top: 30px;
+  align-self: flex-start; /* Запобігає розтягуванню кнопки */
+  background-color: #FE7D00; /* Стилі кнопки */
+  color: #333;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 3px solid #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.goToMenu__image {
+  margin-left: 117px; /* Відстань між зображенням та текстовим блоком */
+}

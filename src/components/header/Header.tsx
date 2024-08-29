@@ -2,6 +2,12 @@ import './header.css'
 import phone from '../../assets/phone-icon.png'
 import cart from '../../assets/cart-icon.png'
 
+const handleCartClick = () => {
+  return
+}
+const handlePhoneClick = () => {
+  return
+}
 
 const Header = () => {
 
@@ -22,8 +28,12 @@ const Header = () => {
             </ul>
           </nav>
           <div className="header__actionBtns">
-            <img src={phone} alt="phone" />
-            <img src={cart} alt="cart" />
+            <button onClick={handlePhoneClick}>
+              <img src={phone} alt="phone" />
+            </button>
+            <button onClick={handleCartClick}>
+              <img src={cart} alt="cart" />
+            </button>
           </div>
         </div>
       </div>

@@ -30,9 +30,12 @@
   font-size: 24px;
   padding-right: 50px;
 }
-.header__actionBtns > img{
+.header__actionBtns > button > img{
   height: 34px;
   padding: 10px;
+}
+.header__actionBtns > button {
+background: none;
 }
 
 .header__logo {

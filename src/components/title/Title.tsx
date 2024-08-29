@@ -3,7 +3,7 @@ import './title.css'
 const Title = () => {
   return (
     <section className="title">
-      <div className="container title__wrapper">
+      <div className="container">
         <div className="title__container">
           <h1 className="title__title">
             Pasta La <span className="title__baby">baby</span> Vista,

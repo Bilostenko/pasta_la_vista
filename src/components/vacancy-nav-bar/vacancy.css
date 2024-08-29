@@ -1,0 +1,10 @@
+.vacancy {
+  background-color: var(--background);
+}
+
+.vacancy__title {
+  font-weight: 700;
+  line-height: 72px;
+  font-size: 72px;
+  color: var(--text);
+}

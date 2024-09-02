@@ -3,8 +3,100 @@
 }
 
 .vacancy__title {
-  font-weight: 700;
+  font-weight: 500;
   line-height: 72px;
-  font-size: 72px;
-  color: var(--text);
+  font-size: 36px;
+}
+
+.vacancy {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 90px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wrapper__vacancy::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Затемнення */
+  z-index: 1;
+  /* Розміщення позаду контенту */
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.vacancy__wrapper {
+  position: absolute;
+  z-index: 2;
+  /* Розміщення поверх затемнення */
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  /* Білий текст */
+}
+
+
+.vacancy__skills li {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.vacancy__skills {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.vacancy img[alt="arrow"] {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  z-index: 3;
+}
+
+.wrapper img[alt="arrow"]:first-child {
+  position: absolute;
+  left: 20px;
+  top: 45%;
+  transform: rotate(180deg);
+}
+
+.wrapper img[alt="arrow"]:last-child {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vacancy__contacts {
+  font-size: 36px;
+  margin-top: 20px;
 }

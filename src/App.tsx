@@ -3,6 +3,7 @@ import GoToMenu from './components/go-to-menu/GoToMenu';
 import Header from './components/header/Header';
 import Title from './components/title/Title';
 import Vacancy from './components/vacancy-nav-bar/Vacancy'
+import Format from './components/format/Format'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       < Title />
       < GoToMenu />
       < Vacancy />
+      < Format />
     </div>
   );
 }

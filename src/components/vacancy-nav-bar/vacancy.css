@@ -68,6 +68,7 @@
 .vacancy__skills li {
   margin-bottom: 10px;
   font-size: 26px;
+  color: var(--text);
 }
 
 .vacancy__skills {

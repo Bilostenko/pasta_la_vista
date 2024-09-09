@@ -12,10 +12,10 @@ const Instagram = () => {
 
   return (
     <section className="instagram">
-      <div className="container">
+      <div className="container center">
         <h2 className="instagram__title">Follow us in Instagram</h2>
         <p className="instagram__desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-        <button className="btn">Instagram</button>
+        <button className="btn instagram__btn">Instagram</button>
         <div className="instagram__picture-wrapper">
           <ul className="instagram__grid-container">
             {images.map((item, index) => (

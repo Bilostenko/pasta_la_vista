@@ -5,6 +5,7 @@ import Title from './components/title/Title';
 import Vacancy from './components/vacancy-nav-bar/Vacancy'
 import Format from './components/format/Format'
 import Instagram from './components/instagram/Instagram';
+import Contacts from './components/contacts/Contacts';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       < Vacancy />
       < Format />
       < Instagram />
+      < Contacts />
     </div>
   );
 }

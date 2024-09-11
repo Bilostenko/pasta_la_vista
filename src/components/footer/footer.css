@@ -1,0 +1,72 @@
+.footer {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.footer-nav {
+  display: flex;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.footer-icons {
+  display: flex;
+}
+
+.icon-link {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* .phone {
+  background-image: url('path-to-phone-icon.svg');
+}
+
+.cart {
+  background-image: url('path-to-cart-icon.svg');
+} */
+
+.footer-text {
+  margin-bottom: 15px;
+}
+
+.instagram-button {
+  display: inline-block;
+  background-color: #ffc107;
+  color: #2e2e2e;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.scroll-top {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #ffc107;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  /* background-image: url('path-to-arrow-up-icon.svg'); */
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}

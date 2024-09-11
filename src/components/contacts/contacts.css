@@ -1,0 +1,47 @@
+.contacts{
+  margin-top: 90px;
+}
+
+.contacts__title {
+  color: var(--header);
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contacts__city {
+  color: var(--header);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 43px;
+}
+
+.contacts__info,
+.contacts__social {
+  color: var(--text);
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.contacts__wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.contacts__contacts{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contacts__social > img,
+.contacts__city > img {
+  vertical-align: middle;
+  margin-right: 8px;
+}

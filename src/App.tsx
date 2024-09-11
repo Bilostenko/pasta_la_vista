@@ -6,6 +6,7 @@ import Vacancy from './components/vacancy-nav-bar/Vacancy'
 import Format from './components/format/Format'
 import Instagram from './components/instagram/Instagram';
 import Contacts from './components/contacts/Contacts';
+import Footer from './components/footer/Footer'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       < Format />
       < Instagram />
       < Contacts />
+      < Footer />
     </div>
   );
 }

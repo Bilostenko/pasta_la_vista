@@ -1,25 +1,45 @@
 import './footer.css'
+import arrow from '../../assets/arrow-icon.png'
+import phone from '../../assets/phone-icon.png'
+import cart from '../../assets/cart-icon.png'
 
 const Footer = () => {
 
+  const handleCartClick = () => {
+    return
+  }
+  const handlePhoneClick = () => {
+    return
+  }
+
   return (
-    <footer>
+    <footer className='footer'>
       <div className="container">
         <div className="footer-content">
+          <div className="header__logo">
+            <span>PASTA</span>
+            <p>la vista baby</p>
+          </div>
           <nav className="footer-nav">
-            <a href="#" className="nav-link">About us</a>
-            <a href="#" className="nav-link">Menu</a>
-            <a href="#" className="nav-link">Contacts</a>
-            <a href="#" className="nav-link">Book a table</a>
+            <a href="#" className="nav-link nunito">About us</a>
+            <a href="#" className="nav-link nunito">Menu</a>
+            <a href="#" className="nav-link nunito">Contacts</a>
+            <a href="#" className="nav-link nunito">Book a table</a>
           </nav>
           <div className="footer-icons">
-            <a href="#" className="icon-link phone"></a>
-            <a href="#" className="icon-link cart"></a>
+            <div className="header__actionBtns">
+              <button onClick={handlePhoneClick}>
+                <img src={phone} alt="phone" />
+              </button>
+              <button onClick={handleCartClick}>
+                <img src={cart} alt="cart" />
+              </button>
+            </div>
           </div>
         </div>
-        <p className="footer-text">We look forward to hearing from you and sharing your feedback on social media!</p>
-        <a href="#" className="instagram-button">Instagram</a>
-        <a href="#" className="scroll-top"></a>
+        <p className="footer-text nunito">We look forward to hearing from you and sharing your feedback on social media!</p>
+        <button className='btn instagram-button'>Instagram</button>
+        <img src={arrow} alt="arrow " className='scroll-top' />
       </div>
     </footer>
   )

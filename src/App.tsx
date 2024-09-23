@@ -12,12 +12,12 @@ function App() {
   return (
     <div className="App">
       < Header />
-      < Title />
+      {/* < Title />
       < GoToMenu />
       < Vacancy />
       < Format />
       < Instagram />
-      < Contacts />
+      < Contacts /> */}
       < Footer />
     </div>
   );

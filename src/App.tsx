@@ -7,6 +7,7 @@ import Format from './components/format/Format'
 import Instagram from './components/instagram/Instagram';
 import Contacts from './components/contacts/Contacts';
 import Footer from './components/footer/Footer'
+import AboutUs from './components/about-us/AboutUs';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       < Format />
       < Instagram />
       < Contacts /> */}
+      < AboutUs />
       < Footer />
     </div>
   );

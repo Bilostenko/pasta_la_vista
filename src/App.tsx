@@ -7,7 +7,8 @@ import Format from './components/format/Format'
 import Instagram from './components/instagram/Instagram';
 import Contacts from './components/contacts/Contacts';
 import Footer from './components/footer/Footer'
-import AboutUs from './components/about-us/AboutUs';
+import AboutUs from './components/about-us-navbar/AboutUs';
+import Menu from './components/menu-navbar/Menu'
 
 function App() {
   return (
@@ -19,7 +20,12 @@ function App() {
       < Format />
       < Instagram />
       < Contacts /> */}
-      < AboutUs />
+
+      {/* PAGES */}
+      {/* < AboutUs /> */}
+      < Menu />
+
+
       < Footer />
     </div>
   );

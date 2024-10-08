@@ -14,6 +14,16 @@ import inst6 from '../assets/img/inst6.png'
 import inst7 from '../assets/img/inst7.png'
 import inst8 from '../assets/img/inst8.png'
 
+// menu
+import dish1 from '../../assets/img/dishes/d1.jpg';
+import dish2 from '../../assets/img/dishes/d2.jpg';
+import dish3 from '../../assets/img/dishes/d3.jpg';
+import dish4 from '../../assets/img/dishes/d4.jpg';
+import dish5 from '../../assets/img/dishes/d5.jpg';
+import dish6 from '../../assets/img/dishes/d6.jpg';
+import dish7 from '../../assets/img/dishes/d7.jpg';
+import dish8 from '../../assets/img/dishes/d8.jpg';
+
 export const formatList = () => {
   return {
     formats: [
@@ -39,7 +49,7 @@ export const formatList = () => {
   }
 }
 
-export const instaImage = ()=>{
+export const instaImage = () => {
   return {
     images: [
       { image: inst1 },
@@ -53,3 +63,14 @@ export const instaImage = ()=>{
     ]
   }
 }
+
+export const menuItems = [
+  { img: dish1, name: "Карбон ла Віста", description: "вершки, копчений бекон, сир Пармезан", price: "99" },
+  { img: dish2, name: "Паста 4 сира", description: "сир камамбер, сир дор-блю, сир брі, сир пармезан", price: "99" },
+  { img: dish3, name: "Паста Болоньєзе", description: "рагу болоньєзе зі свино-яловичим фаршем, сир Пармезан", price: "99" },
+  { img: dish4, name: "Паста з лісовим гірком та горгонзолою", description: "вершки, горгонзола, фетучіне паста", price: "99" },
+  { img: dish5, name: "Паста з грибами, куркою та вершковим соусом", description: "гриби гливи, курка, печінка", price: "99" },
+  { img: dish6, name: "Паста з морепродуктами", description: "соус А-ля карбонара вершковий, вино, часник, перець чилі, мікс морепродуктів", price: "159" },
+  { img: dish7, name: "Паста орзо з морепродуктами", description: "масло, соус песто, чорнослойка, цитрусова восміжога", price: "139" },
+  { img: dish8, name: "Чорна паста з тигровими креветками", description: "соус вино білое/вершки класік, вино, часник, чилі, тигрові креветки", price: "159" },
+];

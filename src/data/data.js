@@ -15,14 +15,14 @@ import inst7 from '../assets/img/inst7.png'
 import inst8 from '../assets/img/inst8.png'
 
 // menu
-import dish1 from '../../assets/img/dishes/d1.jpg';
-import dish2 from '../../assets/img/dishes/d2.jpg';
-import dish3 from '../../assets/img/dishes/d3.jpg';
-import dish4 from '../../assets/img/dishes/d4.jpg';
-import dish5 from '../../assets/img/dishes/d5.jpg';
-import dish6 from '../../assets/img/dishes/d6.jpg';
-import dish7 from '../../assets/img/dishes/d7.jpg';
-import dish8 from '../../assets/img/dishes/d8.jpg';
+import dish1 from '../assets/img/dishes/d1.jpg';
+import dish2 from '../assets/img/dishes/d2.jpg';
+import dish3 from '../assets/img/dishes/d3.jpg';
+import dish4 from '../assets/img/dishes/d4.jpg';
+import dish5 from '../assets/img/dishes/d5.jpg';
+import dish6 from '../assets/img/dishes/d6.jpg';
+import dish7 from '../assets/img/dishes/d7.jpg';
+import dish8 from '../assets/img/dishes/d8.jpg';
 
 export const formatList = () => {
   return {

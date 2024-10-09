@@ -1,0 +1,40 @@
+/* drawer.css */
+.custom-drawer .ant-drawer-content {
+  background: #3F342A;
+}
+
+.custom-drawer .ant-drawer-header {
+  background: #3F342A;
+  color: #fff;
+}
+
+.custom-drawer .ant-drawer-body {
+  color: #fff;
+  background: #3F342A;
+}
+
+.custom-drawer .ant-drawer-title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.ant-drawer-body>p {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+  color: var(--text);
+}
+
+.custom-drawer .ant-drawer-close svg {
+  width: 25px;
+  height: 25px;
+  fill: var(--header);
+}
+
+.custom-drawer .drawer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--header);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}

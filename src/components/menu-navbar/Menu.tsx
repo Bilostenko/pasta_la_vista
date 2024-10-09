@@ -1,23 +1,22 @@
+// components/Menu.tsx
 import React, { useState } from 'react';
 import Vacancy from "../vacancy-nav-bar/Vacancy";
 import "./menu.css";
-import cart from '../../assets/cart-icon.png'
+import cart from '../../assets/cart-icon.png';
 import { menuItems } from '../../data/data';
-import Drawer from '../drawer/Drawer'
-
-
+import CartDrawer from '../drawer/Drawer';
 
 const Menu = () => {
-
-  const [drawerVisible, setDrawerVisible] = useState(false)
+  const [drawerVisible, setDrawerVisible] = useState(false);
 
   const handleCartClick = () => {
-    setDrawerVisible(true); // Відкриває Drawer
+    setDrawerVisible(true);
   };
 
   const handleCloseDrawer = () => {
-    setDrawerVisible(false); // Закриває Drawer
+    setDrawerVisible(false);
   };
+
   return (
     <section className="menu">
       <div className="container">
@@ -51,9 +50,9 @@ const Menu = () => {
           ))}
         </div>
       </div>
-      <Drawer visible={drawerVisible} onClose={handleCloseDrawer}/>
+      <CartDrawer visible={drawerVisible} onClose={handleCloseDrawer} />
     </section>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;

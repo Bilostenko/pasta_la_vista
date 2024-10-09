@@ -1,39 +1,29 @@
-import React, { useState } from 'react';
-import { Drawer, Button } from 'antd';
-import { ShoppingCartOutlined } from '@ant-design/icons'; 
+// components/CartDrawer.tsx
+import React from 'react';
+import { Drawer } from 'antd';
+import './drawer.css';
 
-const CartDrawer = () => {
-  const [visible, setVisible] = useState(false);
+interface CartDrawerProps {
+  visible: boolean;
+  onClose: () => void;
+}
 
-  const showDrawer = () => {
-    setVisible(true);
-  };
-
-  const onClose = () => {
-    setVisible(false);
-  };
-
+const CartDrawer: React.FC<CartDrawerProps> = ({ visible, onClose }) => {
   return (
-    <>
-      <Button 
-        type="primary" 
-        onClick={showDrawer} 
-        icon={<ShoppingCartOutlined />}
-      />
-      <Drawer
-        title="Корзина"
-        placement="right"
-        closable={true}
-        onClose={onClose}
-        visible={visible}
-        width={400} // Ширина меню
-      >
-        {/* Тут можна відобразити список товарів */}
-        <p>Товари у вашій корзині:</p>
-        {/* Наприклад, вивести список замовлених товарів */}
-      </Drawer>
-    </>
+    <Drawer
+      title="Cart"
+      placement="right"
+      closable={true}
+      onClose={onClose}
+      visible={visible}
+      width={400}
+      className="custom-drawer"
+    >
+      <div className="drawer-divider"></div>
+      <p>Your cart is currently empty! Go to the “menu” section and add the desired dishes.</p>
+      {/* Тут відобразиш товари */}
+    </Drawer>
   );
 };
 
-export default CartDrawer
+export default CartDrawer;

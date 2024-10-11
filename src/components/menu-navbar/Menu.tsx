@@ -4,18 +4,12 @@ import Vacancy from "../vacancy-nav-bar/Vacancy";
 import "./menu.css";
 import cart from '../../assets/cart-icon.png';
 import { menuItems } from '../../data/data';
-import CartDrawer from '../drawer/Drawer';
+
+const handleCartClick = () => {
+};
 
 const Menu = () => {
-  const [drawerVisible, setDrawerVisible] = useState(false);
 
-  const handleCartClick = () => {
-    setDrawerVisible(true);
-  };
-
-  const handleCloseDrawer = () => {
-    setDrawerVisible(false);
-  };
 
   return (
     <section className="menu">
@@ -50,7 +44,6 @@ const Menu = () => {
           ))}
         </div>
       </div>
-      <CartDrawer visible={drawerVisible} onClose={handleCloseDrawer} />
     </section>
   );
 };

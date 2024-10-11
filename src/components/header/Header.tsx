@@ -1,15 +1,26 @@
+import React, { useState } from 'react';
 import './header.css'
 import phone from '../../assets/phone-icon.png'
 import cart from '../../assets/cart-icon.png'
+import CartDrawer from '../drawer/Drawer';
+import { Link } from 'react-router-dom';
 
-const handleCartClick = () => {
-  return
-}
 const handlePhoneClick = () => {
-  return
-}
+
+};
 
 const Header = () => {
+
+  const [drawerVisible, setDrawerVisible] = useState(false);
+
+  const handleCartClick = () => {
+    setDrawerVisible(true);
+  };
+
+  const handleCloseDrawer = () => {
+    setDrawerVisible(false);
+  };
+
 
   return (
     <header className="header">
@@ -21,10 +32,18 @@ const Header = () => {
           </div>
           <nav className="header__nav">
             <ul>
-              <li><a href="#" className='nunito'>About us</a></li>
-              <li><a href="#" className='nunito'>Menu</a></li>
-              <li><a href="#" className='nunito'>Contacts</a></li>
-              <li><a href="#" className='nunito'>Table reserve</a></li>
+              <li>
+                <Link to="/about" className='nunito'>Про нас</Link>
+              </li>
+              <li>
+                <Link to="/menu" className='nunito'>Меню</Link>
+              </li>
+              <li>
+                <Link to="/contacts" className='nunito'>Контакти</Link>
+              </li>
+              <li>
+                <a href="#" className='nunito'>Резерв столика</a>
+              </li>
             </ul>
           </nav>
           <div className="header__actionBtns">
@@ -37,6 +56,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <CartDrawer visible={drawerVisible} onClose={handleCloseDrawer} />
     </header>
   )
 }

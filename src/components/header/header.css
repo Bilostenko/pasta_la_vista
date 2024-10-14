@@ -62,3 +62,69 @@ background: none;
   font-style: italic; 
   color: #555; 
 }
+
+.nunito {
+  text-decoration: none;
+  color: #000;
+}
+
+.active {
+  color: #ff0000; 
+  font-weight: bold;
+}
+
+/* header.css */
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-link span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo-link p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.header__nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nunito {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Nunito', sans-serif;
+}
+
+.active {
+  color: #ff0000; /* Наприклад, червоний колір для активного посилання */
+  font-weight: bold;
+}
+
+.header__actionBtns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-button {
+  padding: 8px 16px;
+  background-color: #ff0000; /* Червоний фон */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background-color: #cc0000; /* Темніший червоний при наведенні */
+}

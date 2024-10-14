@@ -3,13 +3,13 @@ import './header.css'
 import phone from '../../assets/phone-icon.png'
 import cart from '../../assets/cart-icon.png'
 import CartDrawer from '../drawer/Drawer';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const handlePhoneClick = () => {
 
 };
 
-const Header = () => {
+const Header: React.FC = () => {
 
   const [drawerVisible, setDrawerVisible] = useState(false);
 
@@ -27,23 +27,34 @@ const Header = () => {
       <div className="container header__container">
         <div className="header__row">
           <div className="header__logo">
-            <span>PASTA</span>
-            <p>la vista baby</p>
+            <NavLink to="/" className="logo-link">
+              <span>PASTA</span>
+              <p>la vista baby</p>
+            </NavLink>
           </div>
           <nav className="header__nav">
             <ul>
               <li>
-                <Link to="/about" className='nunito'>Про нас</Link>
+                <NavLink to="/" className={({ isActive }) => isActive ? 'nunito active' : 'nunito'} >
+                  HOME
+                </NavLink>
               </li>
               <li>
-                <Link to="/menu" className='nunito'>Меню</Link>
+                <NavLink to="/about" className={({ isActive }) => isActive ? 'nunito active' : 'nunito'}>
+                  ABOUT
+                </NavLink>
               </li>
               <li>
-                <Link to="/contacts" className='nunito'>Контакти</Link>
+                <NavLink to="/menu" className={({ isActive }) => isActive ? 'nunito active' : 'nunito'}>
+                  MENU
+                </NavLink>
               </li>
               <li>
-                <a href="#" className='nunito'>Резерв столика</a>
+                <NavLink to="/contacts" className={({ isActive }) => isActive ? 'nunito active' : 'nunito'} >
+                  CONTACTS
+                </NavLink>
               </li>
+
             </ul>
           </nav>
           <div className="header__actionBtns">

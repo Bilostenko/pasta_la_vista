@@ -13,25 +13,24 @@ import Menu from './components/menu-navbar/Menu'
 import ContactsNavBar from './components/contacts-navbar/ContactsNavBar';
 import NotFound from './components/not-found/NotFound';
 import Home from './components/home-page/Home';
-import OrderCreate from './components/order-create/OrderCreate';
+import OrderForm from './components/order-form/OrderForm';
 
 function App() {
   return (
     <div className="App">
       < Header />
-
+< OrderForm />
       {/* Маршрути */}
-      <main>
+      {/* <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/contacts" element={<ContactsNavBar />} />
-          {/* Сторінка за замовчуванням або 404 */}
           <Route path="*" element={<NotFound />} />
 
         </Routes>
-      </main >
+      </main > */}
       < Footer />
     </div >
   );

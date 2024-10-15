@@ -1,0 +1,52 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #2d3748;
+  color: white;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.oops {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.error-code {
+  font-size: 144px;
+  font-weight: bold;
+  margin: 0 0 16px;
+}
+
+.error-message {
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+
+.home-button {
+  padding: 12px 24px;
+  background-color: white;
+  color: #2d3748;
+  border: none;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #e2e8f0;
+}
+
+.background-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 256px;
+  height: 256px;
+  opacity: 0.1;
+}

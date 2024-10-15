@@ -128,3 +128,15 @@ background: none;
 .home-button:hover {
   background-color: #cc0000; /* Темніший червоний при наведенні */
 }
+
+.nunito {
+  font-family: 'Nunito', sans-serif;
+  color: #333; /* Стандартний колір для неактивних елементів */
+  text-decoration: none; /* Видаляємо підкреслення */
+}
+
+.nunito.active {
+  color: #FF6347; /* Колір для активного посилання, можна використати будь-який, який підходить для вашого дизайну */
+  font-weight: bold; /* Можна зробити активне посилання жирним */
+  border-bottom: 2px solid #FF6347; /* Додаємо нижню лінію як візуальний ефект */
+}

@@ -27,11 +27,11 @@ const OrderForm: React.FC = () => {
 
   return (
     <section className="order-form">
-      <div className="container__form">
-        <h1 className="title">Оформлення замовлення</h1>
+      <div className="container container__form">
+        <h1 className="title">Making an order</h1>
         <div className="order-form">
           <div className="column">
-            <h2>Контакти</h2>
+            <h2 className='order-from__subtitle'>Контакти</h2>
             <form>
               <div className="form-group">
                 <label htmlFor="name">Ваше ім'я*</label>
@@ -57,7 +57,7 @@ const OrderForm: React.FC = () => {
                 />
               </div>
 
-              <h2>Спосіб доставки</h2>
+              <h2 className='order-from__subtitle'>Спосіб доставки</h2>
               <div className="radio-group">
                 <label>
                   <input
@@ -91,7 +91,7 @@ const OrderForm: React.FC = () => {
                 />
               </div>
 
-              <h2>Спосіб оплати</h2>
+              <h2 className='order-from__subtitle'>Спосіб оплати</h2>
               <div className="radio-group">
                 <label>
                   <input
@@ -113,7 +113,7 @@ const OrderForm: React.FC = () => {
                 </label>
               </div>
 
-              <h2>Додатково</h2>
+              <h2 className='order-from__subtitle'>Додатково</h2>
               <div className="form-group">
                 <label htmlFor="cutlery">Одноразові прибори</label>
                 <input
@@ -138,7 +138,7 @@ const OrderForm: React.FC = () => {
           </div>
 
           <div className="column">
-            <h2>Ваше замовлення</h2>
+            <h2 className='order-from__subtitle'>Ваше замовлення</h2>
             <ul className="order-list">
               {orderItems.map((item, index) => (
                 <li key={index} className="order-item">

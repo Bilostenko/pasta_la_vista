@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; 
 import './orderForm.css';
 
-// ЗРОБИТИ ВИКЛИК ФОРМИ ЗАМОВЛЕННЯ ПО НАТИСКАНББ КОШИКА
+// КОМПОНЕНТ ЗНАХОДИТЬСЯ НА КНОКАХ МЕНЮ, А МАЄ БУТИ НА КНОПЦІ ВІЗКА
 interface OrderItem {
   name: string;
   price: number;
@@ -16,6 +17,7 @@ const OrderForm: React.FC = () => {
   const [paymentMethod, setPaymentMethod] = useState('');
   const [cutlery, setCutlery] = useState(0);
   const [comment, setComment] = useState('');
+  const navigate = useNavigate();
 
   const orderItems: OrderItem[] = [
     { name: 'Назва страви', price: 99, quantity: 1 },
@@ -155,7 +157,11 @@ const OrderForm: React.FC = () => {
               <p><strong>Вартість: {totalPrice + deliveryPrice} грн</strong></p>
             </div>
             <button type="submit" className="submit-button">Замовити</button>
-            <a href="#" className="menu-link">Перейти в меню</a>
+
+            <button className="menu-link" onClick={() => navigate('/menu')}>
+            Перейти в меню
+            </button>
+
           </div>
         </div>
       </div>

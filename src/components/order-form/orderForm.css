@@ -33,6 +33,8 @@
 
 .column {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-group {
@@ -98,12 +100,14 @@ textarea {
   cursor: pointer;
   font-weight: bold;
   margin-top: 20px;
+  font-size: 24px;
 }
 
 .menu-link {
-  display: block;
+  background: none;
   text-align: center;
   margin-top: 10px;
-  color: #ffd700;
+  color: white;
   text-decoration: none;
+  font-size: 24px;
 }

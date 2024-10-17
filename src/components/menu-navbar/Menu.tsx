@@ -1,15 +1,12 @@
-// components/Menu.tsx
-import React, { useState } from 'react';
+import React from 'react';
 import Vacancy from "../vacancy-nav-bar/Vacancy";
 import "./menu.css";
 import cart from '../../assets/cart-icon.png';
 import { menuItems } from '../../data/data';
+import { useNavigate } from 'react-router-dom'; 
 
-const handleCartClick = () => {
-};
-
-const Menu = () => {
-
+const Menu: React.FC = () => {
+  const navigate = useNavigate();
 
   return (
     <section className="menu">
@@ -35,7 +32,7 @@ const Menu = () => {
                 <p className="menu__dishes-grid-item-text">{item.description}</p>
                 <div className="menu__dishes-grid-item-priceOrder">
                   <p className="menu__dishes-grid-item-price">{item.price} грн</p>
-                  <button onClick={handleCartClick}>
+                  <button onClick={()=> navigate('/order')}>
                     <img src={cart} alt="cart" />
                   </button>
                 </div>
